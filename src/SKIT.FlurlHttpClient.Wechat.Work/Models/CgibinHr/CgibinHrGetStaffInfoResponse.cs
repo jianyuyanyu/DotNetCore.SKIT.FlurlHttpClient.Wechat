@@ -121,8 +121,8 @@ namespace SKIT.FlurlHttpClient.Wechat.Work.Models
         /// <summary>
         /// 获取或设置字段列表。
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("fieldinfo")]
-        [System.Text.Json.Serialization.JsonPropertyName("fieldinfo")]
+        [Newtonsoft.Json.JsonProperty("field_info")]
+        [System.Text.Json.Serialization.JsonPropertyName("field_info")]
         public Types.Field[] FieldList { get; set; } = default!;
     }
 }

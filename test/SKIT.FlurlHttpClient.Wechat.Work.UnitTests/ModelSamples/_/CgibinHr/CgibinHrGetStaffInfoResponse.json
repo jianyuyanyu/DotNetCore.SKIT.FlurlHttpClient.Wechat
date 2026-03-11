@@ -1,7 +1,7 @@
 {
     "errcode": 0,
     "errmsg": "ok",
-    "fieldinfo": [
+    "field_info": [
         {
             "fieldid": 11004,
             "sub_idx": 0,
