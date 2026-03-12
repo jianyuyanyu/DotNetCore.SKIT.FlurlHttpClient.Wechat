@@ -4,7 +4,7 @@
 
 ```csharp
 using SKIT.FlurlHttpClient.Wechat.TenpayV3.ExtendedSDK.Global;
-using SKIT.FlurlHttpClient.Wechat.TenpayV3.Settings;
+using SKIT.FlurlHttpClient.Wechat.TenpayV3.ExtendedSDK.Global.Settings;
 
 var manager = new InMemoryCertificateManager();
 var options = new WechatTenpayGlobalClientOptions()

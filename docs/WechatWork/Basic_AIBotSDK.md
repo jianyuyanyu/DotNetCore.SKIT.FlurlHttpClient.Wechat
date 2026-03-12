@@ -4,7 +4,6 @@
 
 ```csharp
 using SKIT.FlurlHttpClient.Wechat.Work.ExtendedSDK.AIBot;
-using SKIT.FlurlHttpClient.Wechat.Work.Settings;
 
 var options = new WechatWorkAIBotClientOptions()
 {
