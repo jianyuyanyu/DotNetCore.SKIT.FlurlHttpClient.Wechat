@@ -677,7 +677,7 @@
     - **新增**：新增直连商户委托代扣、保险行业委托代扣等相关接口。
     - **新增**：新增商家转账到零钱相关回调通知事件模型。（_via_ [GitHub #134](https://github.com/fudiwei/DotNetCore.SKIT.FlurlHttpClient.Wechat/issues/134)）
     - **新增**：随官方更新境外商户入驻相关接口模型。
-    - **变更**：独立化境外支付相关 API。
+    - **变更**：独立化境外支付相关 API 到扩展客户端。
     - **变更**：重命名部分接口模型，将其中包含的 "PAPPay" 变更为 "PAPay"。
 
 - Release 3.2.0 (2024-04-09)
@@ -935,6 +935,10 @@
 
 <summary>[展开查看]</summary>
 
+- Release 3.15.0 (2026-03-12)
+    - **新增**：实现智能机器人扩展客户端。（_via_ [GitHub #213](https://github.com/fudiwei/DotNetCore.SKIT.FlurlHttpClient.Wechat/issues/213)）
+    - **修复**：修复获取员工花名册信息接口模型定义错误。（_via_ [GitHub #215](https://github.com/fudiwei/DotNetCore.SKIT.FlurlHttpClient.Wechat/issues/215)）
+
 - Release 3.14.0 (2026-02-10)
     - **新增**：随官方更新发送应用消息接口模型。
     - **新增**：随官方更新获客助手相关回调通知事件模型。（_via_ [GitHub #208](https://github.com/fudiwei/DotNetCore.SKIT.FlurlHttpClient.Wechat/issues/208)、[GitHub #209](https://github.com/fudiwei/DotNetCore.SKIT.FlurlHttpClient.Wechat/issues/209)）
@@ -1089,7 +1093,7 @@
     - **新增**：新增生成第三方单点登录扫码授权 URL 的扩展方法。
 
 - Release 2.16.0 (2023-03-09)
-    - **新增**：实现会话内容存档导出聊天记录相关功能。
+    - **新增**：实现企业会话内容存档扩展客户端。
 
 - Release 2.15.0 (2023-01-12)
     - **新增**：新增文档表格相关接口。
