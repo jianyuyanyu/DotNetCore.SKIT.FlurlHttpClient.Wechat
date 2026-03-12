@@ -1,0 +1,78 @@
+{
+    "msgid": "CAIQ16HMjQYY\/NGagIOAgAMgq4KM0AI=",
+    "aibotid": "AIBOTID",
+    "chatid": "CHATID",
+    "chattype": "group",
+    "from": {
+        "corpid": "wpxxxx",
+        "userid": "USERID"
+    },
+    "response_url": "RESPONSEURL",
+    "msgtype": "msgtype",
+    "text": {
+        "content": "@RobotA hello robot"
+    },
+    "image": {
+        "url": "https://ww-aibot-img-1258476243.cos.ap-guangzhou.myqcloud.com/BHoPdA3/7571665296904772241?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDbBpaJvdLBvpnibcYcfyPuaO5f9U1UoGo%26q-sign-time%3D1733467811%3B1733468111%26q-key-time%3D1733467811%3B1733468111%26q-header-list%3Dhost%26q-url-param-list%3D%26q-signature%3D0f7b6576943685f82870bc8db306dbf09dfe0fd6 "
+    },
+    "mixed": {
+        "msg_item": [
+            {
+                "msgtype": "text",
+                "text": {
+                    "content": "@机器人 这是今日的测试情况"
+                }
+            },
+            {
+                "msgtype": "image",
+                "image": {
+                    "url": "https://ww-aibot-img-1258476243.cos.ap-guangzhou.myqcloud.com/BHoPdA3/7571665296904772241?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDbBpaJvdLBvpnibcYcfyPuaO5f9U1UoGo%26q-sign-time%3D1733467811%3B1733468111%26q-key-time%3D1733467811%3B1733468111%26q-header-list%3Dhost%26q-url-param-list%3D%26q-signature%3D0f7b6576943685f82870bc8db306dbf09dfe0fd6 "
+                }
+            }
+        ]
+    },
+    "voice": {
+        "content": "这是语音转成文本的内容"
+    },
+    "file": {
+        "url": "https://ww-aibot-img-1258476243.cos.ap-guangzhou.myqcloud.com/BHoPdA3/7571665296904772241?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDbBpaJvdLBvpnibcYcfyPuaO5f9U1UoGo%26q-sign-time%3D1733467811%3B1733468111%26q-key-time%3D1733467811%3B1733468111%26q-header-list%3Dhost%26q-url-param-list%3D%26q-signature%3D0f7b6576943685f82870bc8db306dbf09df00000 "
+    },
+    "quote": {
+        "msgtype": "text",
+        "text": {
+            "content": "这是今日的测试情况"
+        }
+    },
+    "stream": {
+        "id": "STREAMID"
+    },
+    "event": {
+        "eventtype": "eventtype_name",
+        "template_card_event": {
+            "card_type": "vote_interaction",
+            "event_key": "button_replace_text",
+            "task_id": "fBmjTL7ErRCQSNA6GZKMlcFiWX1shOvg",
+            "selected_items": {
+                "selected_item": [
+                    {
+                        "question_key": "button_selection_key1",
+                        "option_ids": {
+                            "option_id": [
+                                "button_selection_id1"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "feedback_event": {
+            "id": "FEEDBACKID",
+            "type": 2,
+            "content": "能再详细一些么",
+            "inaccurate_reason_list": [
+                2,
+                4
+            ]
+        }
+    }
+}

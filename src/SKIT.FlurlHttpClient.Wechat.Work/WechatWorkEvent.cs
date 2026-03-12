@@ -1,7 +1,7 @@
 namespace SKIT.FlurlHttpClient.Wechat.Work
 {
     /// <summary>
-    /// 表示微信 API 回调通知事件的基类。
+    /// 表示企业微信 API 回调通知事件的基类。
     /// </summary>
     [Newtonsoft.Json.JsonObject]
     [System.Xml.Serialization.XmlRoot("xml")]

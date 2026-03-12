@@ -392,7 +392,7 @@ namespace SKIT.FlurlHttpClient.Wechat.Work.Models
                         /// </summary>
                         [Newtonsoft.Json.JsonProperty("icon_url")]
                         [System.Text.Json.Serialization.JsonPropertyName("icon_url")]
-                        public string IconUrl { get; set; } = string.Empty;
+                        public string? IconUrl { get; set; }
 
                         /// <summary>
                         /// 获取或设置来源图片的描述。
@@ -416,7 +416,7 @@ namespace SKIT.FlurlHttpClient.Wechat.Work.Models
                         /// </summary>
                         [Newtonsoft.Json.JsonProperty("title")]
                         [System.Text.Json.Serialization.JsonPropertyName("title")]
-                        public string Title { get; set; } = string.Empty;
+                        public string? Title { get; set; }
 
                         /// <summary>
                         /// 获取或设置描述。

@@ -136,9 +136,9 @@ namespace SKIT.FlurlHttpClient.Wechat.Work.Utilities
         /// </summary>
         /// <param name="cipherText">企业微信推送来的加密文本内容（即 `Encrypt` 字段的值）。</param>
         /// <param name="encodingAESKey">企业微信后台设置的 EncodingAESKey。</param>
-        /// <param name="corpId">企业微信 CorpId 或第三方应用的 SuiteId。</param>
+        /// <param name="receiveId">企业微信 CorpId 或第三方应用的 SuiteId。</param>
         /// <returns>解密后的文本内容。</returns>
-        public static string AESDecrypt(string cipherText, string encodingAESKey, out string corpId)
+        public static string AESDecrypt(string cipherText, string encodingAESKey, out string receiveId)
         {
             if (cipherText is null) throw new ArgumentNullException(nameof(cipherText));
             if (encodingAESKey is null) throw new ArgumentNullException(nameof(encodingAESKey));
@@ -153,11 +153,11 @@ namespace SKIT.FlurlHttpClient.Wechat.Work.Utilities
             len = IPAddress.NetworkToHostOrder(len);
 
             byte[] bMsg = new byte[len];
-            byte[] bCorpId = new byte[btmpMsg.Length - 20 - len];
+            byte[] bRecId = new byte[btmpMsg.Length - 20 - len];
             Array.Copy(btmpMsg, 20, bMsg, 0, len);
-            Array.Copy(btmpMsg, 20 + len, bCorpId, 0, btmpMsg.Length - 20 - len);
+            Array.Copy(btmpMsg, 20 + len, bRecId, 0, btmpMsg.Length - 20 - len);
 
-            corpId = Encoding.UTF8.GetString(bCorpId);
+            receiveId = Encoding.UTF8.GetString(bRecId);
             return Encoding.UTF8.GetString(bMsg);
         }
 
@@ -166,13 +166,13 @@ namespace SKIT.FlurlHttpClient.Wechat.Work.Utilities
         /// </summary>
         /// <param name="plainText">返回给企业微信的原始文本内容。</param>
         /// <param name="encodingAESKey">企业微信后台设置的 EncodingAESKey。</param>
-        /// <param name="corpId">企业微信 CorpId 或第三方应用的 SuiteId。</param>
+        /// <param name="receiveId">企业微信 CorpId 或第三方应用的 SuiteId。</param>
         /// <returns>加密后的文本内容。</returns>
-        public static string AESEncrypt(string plainText, string encodingAESKey, string corpId)
+        public static string AESEncrypt(string plainText, string encodingAESKey, string receiveId)
         {
             if (plainText is null) throw new ArgumentNullException(nameof(plainText));
             if (encodingAESKey is null) throw new ArgumentNullException(nameof(encodingAESKey));
-            if (corpId is null) throw new ArgumentNullException(nameof(corpId));
+            if (receiveId is null) throw new ArgumentNullException(nameof(receiveId));
 
             byte[] keyBytes = Convert.FromBase64String(encodingAESKey + "=");
             byte[] ivBytes = new byte[16];
@@ -180,15 +180,15 @@ namespace SKIT.FlurlHttpClient.Wechat.Work.Utilities
 
             string randCode = CreateRandCode(16);
             byte[] bRand = Encoding.UTF8.GetBytes(randCode);
-            byte[] bCorpId = Encoding.UTF8.GetBytes(corpId);
+            byte[] bRecId = Encoding.UTF8.GetBytes(receiveId);
             byte[] bMsgTmp = Encoding.UTF8.GetBytes(plainText);
             byte[] bMsgLen = BitConverter.GetBytes(IPAddress.HostToNetworkOrder(bMsgTmp.Length));
-            byte[] bMsg = new byte[bRand.Length + bMsgLen.Length + bCorpId.Length + bMsgTmp.Length];
+            byte[] bMsg = new byte[bRand.Length + bMsgLen.Length + bRecId.Length + bMsgTmp.Length];
 
             Array.Copy(bRand, bMsg, bRand.Length);
             Array.Copy(bMsgLen, 0, bMsg, bRand.Length, bMsgLen.Length);
             Array.Copy(bMsgTmp, 0, bMsg, bRand.Length + bMsgLen.Length, bMsgTmp.Length);
-            Array.Copy(bCorpId, 0, bMsg, bRand.Length + bMsgLen.Length + bMsgTmp.Length, bCorpId.Length);
+            Array.Copy(bRecId, 0, bMsg, bRand.Length + bMsgLen.Length + bMsgTmp.Length, bRecId.Length);
 
             return AESEncrypt(keyBytes: keyBytes, ivBytes: ivBytes, plainBytes: bMsg);
         }

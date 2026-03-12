@@ -92,7 +92,7 @@ namespace SKIT.FlurlHttpClient.Wechat.Work
                 string cipher = Utilities.WxMsgCryptor.AESEncrypt(
                     plainText: json,
                     encodingAESKey: client.Credentials.PushEncodingAESKey!,
-                    corpId: string.IsNullOrEmpty(client.Credentials.SuiteId) ? client.Credentials.CorpId : client.Credentials.SuiteId!
+                    receiveId: string.IsNullOrEmpty(client.Credentials.SuiteId) ? client.Credentials.CorpId : client.Credentials.SuiteId!
                 );
                 string sign = Utilities.WxMsgCryptor.GenerateSignature(
                     sToken: client.Credentials.PushToken!,
@@ -148,7 +148,7 @@ namespace SKIT.FlurlHttpClient.Wechat.Work
                 string cipher = Utilities.WxMsgCryptor.AESEncrypt(
                     plainText: xml,
                     encodingAESKey: client.Credentials.PushEncodingAESKey!,
-                    corpId: string.IsNullOrEmpty(client.Credentials.SuiteId) ? client.Credentials.CorpId : client.Credentials.SuiteId!
+                    receiveId: string.IsNullOrEmpty(client.Credentials.SuiteId) ? client.Credentials.CorpId : client.Credentials.SuiteId!
                 );
 
                 xml = Utilities.WxMsgCryptor.WrapXml(sToken: client.Credentials.PushToken!, sMsgEncrypt: cipher);
@@ -171,10 +171,10 @@ namespace SKIT.FlurlHttpClient.Wechat.Work
         /// </para>
         /// </summary>
         /// <param name="client"></param>
-        /// <param name="webhookTimestamp">微信回调通知中的 "timestamp" 查询参数。</param>
-        /// <param name="webhookNonce">微信回调通知中的 "nonce" 查询参数。</param>
-        /// <param name="webhookEcho">微信回调通知中的 "echostr" 查询参数。</param>
-        /// <param name="webhookSignature">微信回调通知中的 "msg_signature" 查询参数。</param>
+        /// <param name="webhookTimestamp">企业微信回调通知中的 "timestamp" 查询参数。</param>
+        /// <param name="webhookNonce">企业微信回调通知中的 "nonce" 查询参数。</param>
+        /// <param name="webhookEcho">企业微信回调通知中的 "echostr" 查询参数。</param>
+        /// <param name="webhookSignature">企业微信回调通知中的 "msg_signature" 查询参数。</param>
         /// <param name="replyEcho"></param>
         /// <returns></returns>
         public static ErroredResult VerifyEventSignatureForEcho(this WechatWorkClient client, string webhookTimestamp, string webhookNonce, string webhookEcho, string webhookSignature, out string? replyEcho)
@@ -223,10 +223,10 @@ namespace SKIT.FlurlHttpClient.Wechat.Work
         /// </para>
         /// </summary>
         /// <param name="client"></param>
-        /// <param name="webhookTimestamp">微信回调通知中的 "timestamp" 查询参数。</param>
-        /// <param name="webhookNonce">微信回调通知中的 "nonce" 查询参数。</param>
-        /// <param name="webhookJson">微信回调通知中请求正文（JSON 格式）。</param>
-        /// <param name="webhookSignature">微信回调通知中的 "msg_signature" 查询参数。</param>
+        /// <param name="webhookTimestamp">企业微信回调通知中的 "timestamp" 查询参数。</param>
+        /// <param name="webhookNonce">企业微信回调通知中的 "nonce" 查询参数。</param>
+        /// <param name="webhookJson">企业微信回调通知中请求正文（JSON 格式）。</param>
+        /// <param name="webhookSignature">企业微信回调通知中的 "msg_signature" 查询参数。</param>
         /// <returns></returns>
         public static ErroredResult VerifyEventSignatureFromJson(this WechatWorkClient client, string webhookTimestamp, string webhookNonce, string webhookJson, string webhookSignature)
         {
@@ -268,10 +268,10 @@ namespace SKIT.FlurlHttpClient.Wechat.Work
         /// </para>
         /// </summary>
         /// <param name="client"></param>
-        /// <param name="webhookTimestamp">微信回调通知中的 "timestamp" 查询参数。</param>
-        /// <param name="webhookNonce">微信回调通知中的 "nonce" 查询参数。</param>
-        /// <param name="webhookXml">微信回调通知中请求正文（XML 格式）。</param>
-        /// <param name="webhookSignature">微信回调通知中的 "msg_signature" 查询参数。</param>
+        /// <param name="webhookTimestamp">企业微信回调通知中的 "timestamp" 查询参数。</param>
+        /// <param name="webhookNonce">企业微信回调通知中的 "nonce" 查询参数。</param>
+        /// <param name="webhookXml">企业微信回调通知中请求正文（XML 格式）。</param>
+        /// <param name="webhookSignature">企业微信回调通知中的 "msg_signature" 查询参数。</param>
         /// <returns></returns>
         public static ErroredResult VerifyEventSignatureFromXml(this WechatWorkClient client, string webhookTimestamp, string webhookNonce, string webhookXml, string webhookSignature)
         {
