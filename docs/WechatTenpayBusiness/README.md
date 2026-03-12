@@ -6,10 +6,10 @@
 
 ## 功能
 
--   基于微企付 API 封装。
--   请求时自动生成签名，无需开发者手动干预。
--   提供了微企付所需的 RSA、SM3、SM4、SHA-256 等算法工具类。
--   提供了解析回调通知事件等扩展方法。
+- 基于微企付 API 封装。
+- 请求时自动生成签名，无需开发者手动干预。
+- 提供了微企付所需的 RSA、SM3、SM4、SHA-256 等算法工具类。
+- 提供了解析回调通知事件等扩展方法。
 
 ---
 
@@ -76,26 +76,26 @@ else
 
 ## 基础用法
 
--   ⭐ [如何快速找到需要调用的 API 模型类名 / 方法名（附完整 API 对照表）？](./Basic_ModelDefinition.md)
+- ⭐ [如何快速找到需要调用的 API 模型类名 / 方法名（附完整 API 对照表）？](./Basic_ModelDefinition.md)
 
--   [如何加密请求中的敏感数据？](./Basic_RequestSensitiveDataEncryption.md)
+- [如何加密请求中的敏感数据？](./Basic_RequestSensitiveDataEncryption.md)
 
--   [如何解密响应中的敏感数据？](./Basic_ResponseSensitiveDataDecryption.md)
+- [如何解密响应中的敏感数据？](./Basic_ResponseSensitiveDataDecryption.md)
 
--   [如何验证响应签名？](./Basic_ResponseSignatureVerification.md)
+- [如何验证响应签名？](./Basic_ResponseSignatureVerification.md)
 
--   [如何验证回调通知事件签名？](./Basic_EventSignatureVerification.md)
+- [如何验证回调通知事件签名？](./Basic_EventSignatureVerification.md)
 
 ---
 
 ## 高级技巧
 
--   [配置 JSON 序列化器](./Advanced_JsonSerializer.md)
+- [配置 JSON 序列化器](./Advanced_JsonSerializer.md)
 
--   [配置 HttpClient](./Advanced_HttpClient.md)
+- [配置 HttpClient](./Advanced_HttpClient.md)
 
--   [使用拦截器](./Advanced_Interceptor.md)
+- [使用拦截器](./Advanced_Interceptor.md)
 
--   [避免内存泄漏](./Advanced_Dispose.md)
+- [避免内存泄漏](./Advanced_Dispose.md)
 
--   [与 `IHttpClientFactory` 集成](./Advanced_HttpClientFactory.md)
+- [与 `IHttpClientFactory` 集成](./Advanced_HttpClientFactory.md)

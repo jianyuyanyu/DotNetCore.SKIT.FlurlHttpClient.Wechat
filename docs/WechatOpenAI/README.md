@@ -6,10 +6,10 @@
 
 ## 功能
 
--   基于微信对话开放平台 API 封装。
--   针对 v2 版接口，请求时自动生成签名，无需开发者手动干预。
--   提供了微信对话开放平台所需的 AES、MD5、SHA-1 等算法工具类。
--   提供了解析回调通知事件等扩展方法。
+- 基于微信对话开放平台 API 封装。
+- 针对 v2 版接口，请求时自动生成签名，无需开发者手动干预。
+- 提供了微信对话开放平台所需的 AES、MD5、SHA-1 等算法工具类。
+- 提供了解析回调通知事件等扩展方法。
 
 ---
 
@@ -84,18 +84,18 @@ else
 
 ## 基础用法
 
--   ⭐ [如何快速找到需要调用的 API 模型类名 / 方法名？](./Basic_ModelDefinition.md)
+- ⭐ [如何快速找到需要调用的 API 模型类名 / 方法名？](./Basic_ModelDefinition.md)
 
 ---
 
 ## 高级技巧
 
--   [配置 JSON 序列化器](./Advanced_JsonSerializer.md)
+- [配置 JSON 序列化器](./Advanced_JsonSerializer.md)
 
--   [配置 HttpClient](./Advanced_HttpClient.md)
+- [配置 HttpClient](./Advanced_HttpClient.md)
 
--   [使用拦截器](./Advanced_Interceptor.md)
+- [使用拦截器](./Advanced_Interceptor.md)
 
--   [避免内存泄漏](./Advanced_Dispose.md)
+- [避免内存泄漏](./Advanced_Dispose.md)
 
--   [与 `IHttpClientFactory` 集成](./Advanced_HttpClientFactory.md)
+- [与 `IHttpClientFactory` 集成](./Advanced_HttpClientFactory.md)

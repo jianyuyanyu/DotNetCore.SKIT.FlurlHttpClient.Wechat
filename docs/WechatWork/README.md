@@ -6,11 +6,12 @@
 
 ## 功能
 
--   基于企业微信 API 封装。
--   支持企业内部开发、第三方应用开发、服务商代开发、智慧硬件开发四种模式。
--   提供了企业微信所需的 AES、RSA、SHA-1 等算法工具类。
--   提供了企业微信会话内容存档基于 C++ SDK 的相关功能封装。
--   提供了 JS-SDK 签名、解析回调通知事件等扩展方法。
+- 基于企业微信 API 封装。
+- 支持企业内部开发、第三方应用开发、服务商代开发、智慧硬件开发四种模式。
+- 提供了企业微信所需的 AES、RSA、SHA-1 等算法工具类。
+- 提供了企业微信会话内容存档基于 C SDK 的相关功能封装。
+- 提供了企业微信智能机器人 Webhook 的相关功能封装。
+- 提供了 JS-SDK 签名、解析回调通知事件等扩展方法。
 
 ---
 
@@ -74,32 +75,32 @@ else
 
 ## 基础用法
 
--   ⭐ [如何快速找到需要调用的 API 模型类名 / 方法名？](./Basic_ModelDefinition.md)
+- ⭐ [如何快速找到需要调用的 API 模型类名 / 方法名？](./Basic_ModelDefinition.md)
 
--   [如何解析回调通知事件？](./Basic_EventDeserialization.md)
+- [如何解析回调通知事件？](./Basic_EventDeserialization.md)
 
--   ⭐ [如何生成 JS-SDK 所需的参数及签名？](./Basic_Parameters.md)
+- ⭐ [如何生成 JS-SDK 所需的参数及签名？](./Basic_Parameters.md)
 
--   [如何接入会话内容存档？](./Basic_FinanceSDK.md)
+- [如何接入会话内容存档？](./Basic_FinanceSDK.md)
 
--   [如何自定义额外的 API 接口？](./Basic_Extensions.md)
+- [如何自定义额外的 API 接口？](./Basic_Extensions.md)
 
 ---
 
 ## 高级技巧
 
--   [配置 JSON 序列化器](./Advanced_JsonSerializer.md)
+- [配置 JSON 序列化器](./Advanced_JsonSerializer.md)
 
--   [配置 HttpClient](./Advanced_HttpClient.md)
+- [配置 HttpClient](./Advanced_HttpClient.md)
 
--   [使用拦截器](./Advanced_Interceptor.md)
+- [使用拦截器](./Advanced_Interceptor.md)
 
--   [避免内存泄漏](./Advanced_Dispose.md)
+- [避免内存泄漏](./Advanced_Dispose.md)
 
--   [与 `IHttpClientFactory` 集成](./Advanced_HttpClientFactory.md)
+- [与 `IHttpClientFactory` 集成](./Advanced_HttpClientFactory.md)
 
 ---
 
 ## 迁移指南
 
--   [v3.x 迁移指南](./Migration_V3.md)
+- [v3.x 迁移指南](./Migration_V3.md)

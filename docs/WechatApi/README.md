@@ -6,10 +6,10 @@
 
 ## 功能
 
--   基于微信公众平台 & 微信开放平台 API 封装。
--   提供了微信公众平台 & 微信开放平台所需的 AES、SHA-1、HMAC-SHA-256 等算法工具类。
--   提供了 JS-SDK 签名、解析回调通知事件等扩展方法。
--   支持 API 安全鉴权模式（支持接入 AES+RSA 和 SM4+SM2 两种算法），自动加密并签名请求，自动解密响应。
+- 基于微信公众平台 & 微信开放平台 API 封装。
+- 提供了微信公众平台 & 微信开放平台所需的 AES、SHA-1、HMAC-SHA-256 等算法工具类。
+- 提供了 JS-SDK 签名、解析回调通知事件等扩展方法。
+- 支持 API 安全鉴权模式（支持接入 AES+RSA 和 SM4+SM2 两种算法），自动加密并签名请求，自动解密响应。
 
 ---
 
@@ -80,33 +80,33 @@ else
 
 ## 基础用法
 
--   ⭐ [如何快速找到需要调用的 API 模型类名 / 方法名？](./Basic_ModelDefinition.md)
+- ⭐ [如何快速找到需要调用的 API 模型类名 / 方法名？](./Basic_ModelDefinition.md)
 
--   [如何解析回调通知事件？](./Basic_EventDeserialization.md)
+- [如何解析回调通知事件？](./Basic_EventDeserialization.md)
 
--   [如何验证回调通知事件签名？](./Basic_EventSignatureVerification.md)
+- [如何验证回调通知事件签名？](./Basic_EventSignatureVerification.md)
 
--   [如何解密经过加密处理的开放数据？](./Basic_OpenDataDecryption.md)
+- [如何解密经过加密处理的开放数据？](./Basic_OpenDataDecryption.md)
 
--   ⭐ [如何生成 JS-SDK 初始化时所需的参数及签名？](./Basic_Parameters.md)
+- ⭐ [如何生成 JS-SDK 初始化时所需的参数及签名？](./Basic_Parameters.md)
 
--   [如何自定义额外的 API 接口？](./Basic_Extensions.md)
+- [如何自定义额外的 API 接口？](./Basic_Extensions.md)
 
--   [如何接入安全鉴权模式？](./Basic_SecureAPI.md)
+- [如何接入安全鉴权模式？](./Basic_SecureAPI.md)
 
 ---
 
 ## 高级技巧
 
--   [配置 JSON 序列化器](./Advanced_JsonSerializer.md)
+- [配置 JSON 序列化器](./Advanced_JsonSerializer.md)
 
--   [配置 HttpClient](./Advanced_HttpClient.md)
+- [配置 HttpClient](./Advanced_HttpClient.md)
 
--   [使用拦截器](./Advanced_Interceptor.md)
+- [使用拦截器](./Advanced_Interceptor.md)
 
--   [避免内存泄漏](./Advanced_Dispose.md)
+- [避免内存泄漏](./Advanced_Dispose.md)
 
--   [与 `IHttpClientFactory` 集成](./Advanced_HttpClientFactory.md)
+- [与 `IHttpClientFactory` 集成](./Advanced_HttpClientFactory.md)
 
 ---
 
@@ -120,5 +120,4 @@ else
 
 ## 迁移指南
 
--   [v3.x 迁移指南](./Migration_V3.md)
-
+- [v3.x 迁移指南](./Migration_V3.md)

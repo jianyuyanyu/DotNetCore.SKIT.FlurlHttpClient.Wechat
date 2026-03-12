@@ -1,6 +1,6 @@
 ﻿## 如何接入境外支付 API？
 
-微信支付境外支付 API 的接入点、接口模型公共参数等配置项与基础 API 完全不同，需要使用独立的扩展客户端。
+微信支付境外支付 API 的接口模型参数与基础 API 不同，需要使用独立的扩展客户端。
 
 ```csharp
 using SKIT.FlurlHttpClient.Wechat.TenpayV3.ExtendedSDK.Global;

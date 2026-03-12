@@ -8,9 +8,9 @@
 
 ## 功能
 
--   基于微信广告平台 API 封装。
--   请求时自动生成服务商身份令牌，无需开发者手动干预。
--   提供了微信广告平台所需的 MD5 等算法工具类。
+- 基于微信广告平台 API 封装。
+- 请求时自动生成服务商身份令牌，无需开发者手动干预。
+- 提供了微信广告平台所需的 MD5 等算法工具类。
 
 ---
 
@@ -66,20 +66,20 @@ var response = await client.ExecuteCampaignsAddAsync(request);
 
 ## 基础用法
 
--   ⭐ [如何快速找到需要调用的 API 模型类名 / 方法名？](./Basic_ModelDefinition.md)
+- ⭐ [如何快速找到需要调用的 API 模型类名 / 方法名？](./Basic_ModelDefinition.md)
 
--   [如何获取接口调用凭据（即 AccessToken）？](./Basic_AccessToken.md)
+- [如何获取接口调用凭据（即 AccessToken）？](./Basic_AccessToken.md)
 
 ---
 
 ## 高级技巧
 
--   [配置 JSON 序列化器](./Advanced_JsonSerializer.md)
+- [配置 JSON 序列化器](./Advanced_JsonSerializer.md)
 
--   [配置 HttpClient](./Advanced_HttpClient.md)
+- [配置 HttpClient](./Advanced_HttpClient.md)
 
--   [使用拦截器](./Advanced_Interceptor.md)
+- [使用拦截器](./Advanced_Interceptor.md)
 
--   [避免内存泄漏](./Advanced_Dispose.md)
+- [避免内存泄漏](./Advanced_Dispose.md)
 
--   [与 `IHttpClientFactory` 集成](./Advanced_HttpClientFactory.md)
+- [与 `IHttpClientFactory` 集成](./Advanced_HttpClientFactory.md)

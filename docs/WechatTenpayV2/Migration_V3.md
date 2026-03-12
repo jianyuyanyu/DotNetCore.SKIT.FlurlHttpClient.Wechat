@@ -70,18 +70,18 @@ var client = new WechatTenpayClient(options);
 
 公共组件中提供了如下的异常类型：
 
--   `CommonException`：异常基类。
--   `CommonHttpException`：执行 HTTP 请求时引发的异常。
--   `CommonTimeoutException`：超时引发的异常。
--   `CommonSerializationException`：序列化或反序列化时引发的异常。
--   `CommonInterceptorCallException`：拦截器引发的异常。
+- `CommonException`：异常基类。
+- `CommonHttpException`：执行 HTTP 请求时引发的异常。
+- `CommonTimeoutException`：超时引发的异常。
+- `CommonSerializationException`：序列化或反序列化时引发的异常。
+- `CommonInterceptorCallException`：拦截器引发的异常。
 
 模块内更加细化的异常信息，统一由 `WechatTenpayException` 异常类型包装，但废弃并移除了其派生的异常类型：
 
--   `WechatTenpayRequestTimeoutException`
--   `WechatTenpayRequestSignatureException`
--   `WechatTenpayEventDecryptionException`
--   `WechatTenpayEventVerificationException`
+- `WechatTenpayRequestTimeoutException`
+- `WechatTenpayRequestSignatureException`
+- `WechatTenpayEventDecryptionException`
+- `WechatTenpayEventVerificationException`
 
 ### 基础类型：`SKIT.FlurlHttpClient.Primitives.EncodedeString`
 
@@ -126,7 +126,6 @@ bool ret = (bool)eret;
 ```
 
 涉及到变化的包括 `VerifyEventSignature()` 等扩展方法。
-
 
 ### 方法命名参数的变化
 
